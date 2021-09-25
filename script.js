@@ -1,5 +1,4 @@
 
-require('dotenv').config();
 const imgContainer = document.getElementById('img-container');
 const loader = document.getElementById('loader');
 
@@ -11,7 +10,7 @@ let photosArray = [];
 let isInitialLoad = true;
 
 // Unsplash API
-let key = process.env.API_KEY;
+let key = 'Ayq9oU66xo5yhnjbsu10Fj0xIZWI7nlyluylYxZ9gAA';
 let initialCount = 5;
 let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${key}&count=${initialCount}`;
 function updateAPIURLWithNewCount (picCount) {
